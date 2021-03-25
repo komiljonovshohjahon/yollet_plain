@@ -1,0 +1,100 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+h1 {
+  color: rgb(17, 24, 39);
+}
+p {
+  color: rgb(107, 114, 128);
+  font-size: small;
+  white-space: pre-line;
+  font-size: large;
+}
+button {
+  color: rgb(75, 85, 99);
+  font-weight: 500;
+}
+
+ul li {
+  color: rgb(75, 85, 99);
+}
+.text-orange {
+  color: rgb(249, 115, 22);
+}
+section {
+  padding: 0 5%;
+}
+
+.infra-section div:nth-of-type(2) p:first-of-type {
+  color: rgb(249, 115, 22);
+}
+*:focus {
+  outline: none;
+}
+
+.qa-list {
+  width: 60%;
+}
+
+.qa-list li {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(243, 244, 246);
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 1rem;
+}
+.qa-list li p {
+  font-weight: 400;
+  color: black;
+}
+.qa-list li button {
+  color: black;
+}
+
+.page-list li {
+  padding: 1rem;
+  border-top: 2px white solid;
+}
+
+.page-list li:active {
+  border-top: 2px black solid;
+}
+form {
+  padding-top: 3rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: small;
+  padding-bottom: 1rem;
+}
+
+form div label {
+  padding-bottom: 3px;
+}
+
+form button {
+  background-color: rgb(255, 130, 0);
+  color: white;
+}
+
+.brochure {
+  background-image: url("./assets/bg/Rectangle\ 28.png");
+  color: white;
+}
+
+table thead tr th {
+  text-align: left;
+  padding: 0.5rem 2rem;
+  font-size: 0.7rem;
+}
+table tbody tr td {
+  text-align: left;
+  padding: 0.5rem 2rem;
+  font-size: 0.7rem;
+}
