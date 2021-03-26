@@ -30,7 +30,7 @@ section {
 }
 
 .qa-list {
-  width: 60%;
+  width: 90%;
 }
 
 .qa-list li {
@@ -86,8 +86,12 @@ form button {
 }
 
 .brochure {
-  background-image: url("./assets/bg/Rectangle\ 28.png");
+  background-image: url("./assets/bg/background.png"),
+    url("./assets/bg/Rectangle\ 28.png");
+  background-size: contain;
   color: white;
+}
+.page6-bg {
 }
 
 table thead tr th {
