@@ -33,86 +33,87 @@
   <body>
     <!-- NAVBAR -->
     <!-- NAVBAR DROPDOWN -->
-
-    <div class="p-4 lg:px-10 lg:pt-4 lg:container lg:mx-auto">
-      <div
-        class="text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 px-4 sm:px-10 lg:px-20"
-      >
+    <div class="bg-white sticky top-0 z-10">
+      <div class="lg:px-10 lg:container lg:mx-auto">
         <div
-          x-data="{ open: false }"
-          class="flex flex-col mx-auto lg:items-center lg:flex-row"
+          class="text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800 px-4 sm:px-10 lg:px-20"
         >
-          <div class="flex flex-row items-center justify-between">
-            <a
-              href="#"
-              class="text-lg font-semibold tracking-widest text-gray-900 rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline md:mr-4"
-              ><img src="./assets/logos/Logo.png"
-            /></a>
-            <button
-              class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline"
-              @click="open = !open"
-            >
-              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                <path
-                  x-show="!open"
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-                <path
-                  x-show="open"
-                  fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <nav
-            :class="{'flex': open, 'hidden': !open}"
-            class="flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row"
+          <div
+            x-data="{ open: false }"
+            class="flex flex-col mx-auto lg:items-center lg:flex-row"
           >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Home</a
+            <div class="flex flex-row items-center justify-between">
+              <a
+                href="#"
+                class="text-lg font-semibold tracking-widest text-gray-900 rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline md:mr-4"
+                ><img src="./assets/logos/Logo.png"
+              /></a>
+              <button
+                class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline"
+                @click="open = !open"
+              >
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                  <path
+                    x-show="!open"
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    x-show="open"
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <nav
+              :class="{'flex': open, 'hidden': !open}"
+              class="flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row"
             >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Service</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Our Projects</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Documents</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="#"
-              >Contact Us</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-orange"
-              href="#"
-              >Yollet Scan</a
-            >
-            <a
-              class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-orange"
-              href="#"
-              >Yollet Service</a
-            >
-            <div
-              @click.away="open = false"
-              class="relative"
-              x-data="{ open: false }"
-            ></div>
-          </nav>
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Service</a
+              >
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Our Projects</a
+              >
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Documents</a
+              >
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Contact Us</a
+              >
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-orange"
+                href="#"
+                >Yollet Scan</a
+              >
+              <a
+                class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-orange"
+                href="#"
+                >Yollet Service</a
+              >
+              <div
+                @click.away="open = false"
+                class="relative"
+                x-data="{ open: false }"
+              ></div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
@@ -122,7 +123,7 @@
     <!-- FIRST PAGE -->
 
     <section
-      class="md:flex mt-16 lg:mt-40 relative lg:container lg:mx-auto lg:px-10 justify-between"
+      class="md:flex lg:mt-60 relative lg:container lg:mx-auto lg:px-10 justify-between"
     >
       <div class="lg:space-y-8 overflow-y-auto px-4 lg:px-10 lg:px-0">
         <h1 class="font-bold text-4xl lg:text-6xl lg:pl-12">
