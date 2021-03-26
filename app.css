@@ -91,21 +91,20 @@ form button {
   background-size: contain;
   color: white;
 }
-.page6-bg {
-}
 
 table thead tr th {
-  text-align: left;
-  padding: 0.5rem 2rem;
-  font-size: 1rem;
   color: rgb(107, 114, 128);
-  font-weight: normal;
+  font-weight: 500;
 }
 table tbody tr td {
-  text-align: left;
-  padding: 0.5rem 2rem;
-  font-size: 1rem;
   color: rgb(156, 163, 175);
+}
+
+table thead tr th:last-child {
+  padding-right: 0;
+}
+table tbody tr td:last-child {
+  padding-right: 0;
 }
 
 .social-logos {

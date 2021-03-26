@@ -31,7 +31,7 @@
 
     <div class="p-4 lg:p-0 lg:pt-4 lg:container lg:mx-auto">
       <div
-        class="text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800"
+        class="text-gray-700 bg-white dark-mode:text-gray-200 fixed dark-mode:bg-gray-800"
       >
         <div
           x-data="{ open: false }"
@@ -489,9 +489,9 @@
 
     <!-- FOOTER -->
     <footer
-      class="px-10 py-8 lg:py-16 lg:px-8 flex flex-col lg:flex-row lg:container lg:mx-auto justify-between"
+      class="px-10 py-8 lg:py-16 lg:px-8 flex flex-col lg:flex-row lg:container lg:mx-auto lg:justify-between"
     >
-      <div class="lg:w-full lg:w-1/3 space-y-4">
+      <div class="w-full lg:w-1/3 space-y-4">
         <img src="./assets/logos/footer-logo.png" alt="" />
         <p>Make radically better things</p>
         <div class="social-logos space-x-6 lg:text-2xl">
@@ -502,38 +502,64 @@
           <a href=""><i class="fas fa-basketball-ball"></i></a>
         </div>
       </div>
-      <div>
-        <table class="lg:w-full">
+      <div class="mt-4 lg:mt-0">
+        <table class="w-full text-xs lg:text-base text-left">
           <thead>
             <tr>
-              <th class="cursor-pointer"><a>Service</a></th>
-              <th class="cursor-pointer"><a>Our Projects</a></th>
-              <th class="cursor-pointer"><a>Documents</a></th>
-              <th class="cursor-pointer"><a>Conctact Us</a></th>
+              <th class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Service</a>
+              </th>
+              <th class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Our Projects</a>
+              </th>
+              <th class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Documents</a>
+              </th>
+              <th class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Conctact Us</a>
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="cursor-pointer"><a>Payment Service</a></td>
-              <td class="cursor-pointer"><a>Yollet Wallet</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Payment Service</a>
+              </td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Yollet Wallet</a>
+              </td>
               <td></td>
-              <td class="cursor-pointer"><a>FAQ</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>FAQ</a>
+              </td>
             </tr>
             <tr>
-              <td class="cursor-pointer"><a>Yollet Token</a></td>
-              <td class="cursor-pointer"><a>Payment</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Yollet Token</a>
+              </td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Payment</a>
+              </td>
               <td></td>
-              <td class="cursor-pointer"><a>Q&A</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Q&A</a>
+              </td>
             </tr>
             <tr>
               <td></td>
-              <td class="cursor-pointer"><a>Yollet Scan</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Yollet Scan</a>
+              </td>
               <td></td>
-              <td class="cursor-pointer"><a>Contact Us</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Contact Us</a>
+              </td>
             </tr>
             <tr>
               <td></td>
-              <td><a>Issue Token</a></td>
+              <td class="cursor-pointer pr-4 leading-3 pb-3 lg:pr-32 lg:py-4">
+                <a>Issue Token</a>
+              </td>
               <td></td>
               <td></td>
             </tr>
