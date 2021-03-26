@@ -1,14 +1,14 @@
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Nanum Gothic", sans-serif;
+  text-transform: capitalize;
 }
 h1 {
   color: rgb(17, 24, 39);
 }
+
 p {
   color: rgb(107, 114, 128);
-  font-size: small;
   white-space: pre-line;
-  font-size: large;
 }
 button {
   color: rgb(75, 85, 99);
@@ -28,9 +28,6 @@ section {
 .infra-section div:nth-of-type(2) p:first-of-type {
   color: rgb(249, 115, 22);
 }
-*:focus {
-  outline: none;
-}
 
 .qa-list {
   width: 60%;
@@ -41,26 +38,29 @@ section {
   height: 3rem;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(243, 244, 246);
+  /* background-color: rgba(243, 244, 246); */
   margin-bottom: 10px;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 .qa-list li p {
-  font-weight: 400;
+  font-weight: 600;
   color: black;
 }
 .qa-list li button {
   color: black;
+  font-weight: 600;
 }
 
 .page-list li {
   padding: 1rem;
   border-top: 2px white solid;
+  color: rgb(107, 114, 128);
 }
 
 .page-list li:active {
   border-top: 2px black solid;
+  color: rgb(55, 65, 81);
 }
 form {
   padding-top: 3rem;
@@ -76,6 +76,8 @@ form div {
 
 form div label {
   padding-bottom: 3px;
+  color: rgb(55, 65, 81);
+  font-weight: 500;
 }
 
 form button {
@@ -91,10 +93,29 @@ form button {
 table thead tr th {
   text-align: left;
   padding: 0.5rem 2rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  color: rgb(107, 114, 128);
+  font-weight: normal;
 }
 table tbody tr td {
   text-align: left;
   padding: 0.5rem 2rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  color: rgb(156, 163, 175);
+}
+
+.social-logos {
+  color: rgb(156, 163, 175);
+}
+
+.message-head {
+  color: rgb(55, 65, 81);
+}
+
+.head-p {
+  color: rgb(75, 85, 99);
+}
+
+.inn-head {
+  color: rgb(31, 41, 55);
 }

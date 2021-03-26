@@ -7,18 +7,29 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./tailwind.css" />
     <link rel="stylesheet" href="./app.css" />
-    <title>Document</title>
+    <title>Yollet</title>
   </head>
   <body>
     <nav class="flex justify-between items-center pt-4 lg:container lg:mx-auto">
-      <img src="./assets/logos/Logo.png" class="lg:h-auto" />
-      <ul class="flex space-x-6 text-sm">
-        <li>Home</li>
+      <a href="/"><img src="./assets/logos/Logo.png" class="lg:h-auto" /></a>
+      <ul class="flex space-x-6 text-sm font-bold">
+        <li class="bg-none">Home</li>
         <li>Service</li>
         <li>Our Projects</li>
         <li>Documents</li>
@@ -26,16 +37,19 @@
         <li class="text-orange">Yollet Scan</li>
         <li class="text-orange">Yollet Service</li>
       </ul>
+      <div></div>
     </nav>
 
-    <section class="flex mt-40 lg:container lg:mx-auto px-0 justify-between">
+    <section
+      class="flex mt-40 lg:container lg:mx-auto px-0 justify-between aaa"
+    >
       <!-- FIRST PAGE -->
       <div class="space-y-8 relative">
         <h1 class="font-bold text-6xl">
           Make radically better <br />
           things
         </h1>
-        <p class="text-base">
+        <p class="text-xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Exercitationem cupiditate accusamus
         </p>
@@ -59,22 +73,22 @@
     <div class="bg-blue-50">
       <!-- SECOND PAGE -->
       <section
-        class="flex justify-center flex-col items-center space-y-8 pt-16 text-center container mx-auto px-0"
+        class="flex justify-center flex-col items-center pt-16 text-center container mx-auto px-0"
       >
-        <div class="flex flex-col items-center space-y-4">
-          <p class="text-sm">Yollet payment</p>
-          <h1 class="font-bold text-4xl">
+        <div class="flex flex-col items-center">
+          <p class="text-lg font-normal text-gray-500">Yollet Payment</p>
+          <h1 class="font-bold text-4xl inn-head">
             Innovation of payment <br />
             infrastructure
           </h1>
-          <p>
+          <p class="text-lg font-medium tracking-tighter head-p">
             Yollet은 Blockchain 기반 간편결제의 컨설팅, 규제대응, 코어설계,
             구축, 운영한 다수의 프로젝트 경험을 바탕으로, 간편결제의 승인결제가
             가능한 솔루션을 개발하였습니다
           </p>
         </div>
         <button
-          class="border border-gray-300 text-base py-2 px-5 rounded bg-white my-4 focus:outline-none focus:border-gray-400"
+          class="border border-gray-300 text-base py-2 px-5 rounded bg-white my-4 focus:outline-none focus:border-gray-400 text-lg font-bold"
         >
           Learn more
         </button>
@@ -92,17 +106,17 @@
           <img src="./assets/images/section-3.png" alt="" />
         </div>
         <div class="w-1/2 pl-20">
-          <p class="text-sm">Yollet Platform</p>
-          <h1 class="font-bold text-4xl leading-tight">
+          <p class="text-lg font-normal text-gray-500">Yollet Platform</p>
+          <h1 class="font-bold text-4xl leading-tight tracking-tight inn-head">
             Cryptocurrency ecosystem for your business
           </h1>
-          <p>
+          <p class="text-lg font-medium head-p tracking-tighter">
             Yollet 네트워크는 하이퍼레져를 기반으로 결제, 송금 등 금융거래에
             최적화된 플랫폼입니다. Yollet 플랫폼을 이용해당신의 비즈니스 모델을
             구성해보십시오.
           </p>
           <button
-            class="border border-gray-300 text-base py-2 px-5 rounded bg-white my-4 focus:outline-none focus:border-gray-400"
+            class="border border-gray-300 text-base py-2 px-5 rounded bg-white my-8 focus:outline-none focus:border-gray-400 text-lg font-bold"
           >
             Learn more
           </button>
@@ -116,45 +130,47 @@
       <section
         class="flex flex-col items-center py-16 infra-section lg:container lg:mx-auto"
       >
-        <div class="space-y-2 text-center mb-8">
-          <p class="text-inherit">Service</p>
-          <h1 class="font-bold text-4xl leading-none">
+        <div class="text-center mb-6">
+          <p class="text-lg font-normal text-gray-500">Service</p>
+          <h1 class="font-bold text-4xl leading-tight tracking-tight inn-head">
             Payment infra for your business
           </h1>
-          <p class="text-sm">
+          <p
+            class="text-lg font-medium head-p tracking-tighter head-p whitespace-nowrap mt-4"
+          >
             획기적인 디지털 마케팅 기술로 비즈니스를 보다 쉽고 빠르며 효율적으로
             만듭니다.
           </p>
         </div>
-        <div class="flex p-16 space-x-4">
-          <div class="w-1/2 space-y-4">
+        <div class="flex p-16 space-x-32">
+          <div class="w-1/2 space-y-2">
             <img src="./assets/images/section4-1.png" alt="" />
             <img src="./assets/icons/Exchange Rates.png" alt="" />
-            <p>Yoshop</p>
-            <p>매장에서 사용 가능한 스마트 POS 시스템</p>
+            <p class="text-lg font-medium">Yoshop</p>
+            <p class="text-base">매장에서 사용 가능한 스마트 POS 시스템</p>
           </div>
 
-          <div class="w-1/2 space-y-4">
+          <div class="w-1/2 space-y-2">
             <img src="./assets/images/section4-2.png" alt="" />
             <img src="./assets/icons/Exchange Rates-1.png" alt="" />
-            <p>Yoshop Wallet</p>
-            <p>송금 결제 기능을 제공하는 Wallet 서비스</p>
+            <p class="text-lg font-medium">Yoshop Wallet</p>
+            <p class="text-base">송금 결제 기능을 제공하는 Wallet 서비스</p>
           </div>
         </div>
 
-        <div class="flex p-16 space-x-4">
-          <div class="w-1/2 space-y-4">
+        <div class="flex p-16 space-x-32">
+          <div class="w-1/2 space-y-2">
             <img src="./assets/images/section4-3.png" alt="" />
             <img src="./assets/icons/Exchange Rates-2.png" alt="" />
-            <p class="text-orange">Cloud Payment Service</p>
-            <p>송금 결제 기능을 제공하는 Wallet 서비스</p>
+            <p class="text-orange text-lg font-medium">Cloud Payment Service</p>
+            <p class="text-base">송금 결제 기능을 제공하는 Wallet 서비스</p>
           </div>
 
-          <div class="w-1/2 space-y-4">
+          <div class="w-1/2 space-y-2">
             <img src="./assets/images/section4-3.png" alt="" />
             <img src="./assets/icons/Exchange Rates-3.png" alt="" />
-            <p>Yoshop Token</p>
-            <p>하이퍼레져 기반의 암호화폐 Eco system</p>
+            <p class="text-lg font-medium">Yoshop Token</p>
+            <p class="text-base">하이퍼레져 기반의 암호화폐 Eco system</p>
           </div>
         </div>
       </section>
@@ -162,57 +178,79 @@
     <!-- FOURTH PAGE -->
 
     <!-- FIFTH PAGE -->
-    <section class="flex py-16 justify-center flex-col items-center">
-      <div class="space-y-2 text-center mb-8 flex flex-col">
-        <p>FAQ</p>
-        <h1 class="font-bold text-4xl leading-none">
+    <section
+      class="flex py-16 justify-center flex-col items-center lg:container lg:mx-auto"
+    >
+      <div class="text-center mb-8 flex flex-col">
+        <p class="text-lg font-normal text-gray-400">FAQ</p>
+        <h1
+          class="message-head font-bold text-4xl leading-tight tracking-tight"
+        >
           Frequently asked questions
         </h1>
-        <p>자주하시는 질문과 궁금해 하시는 질문들을 정리했습니다.</p>
+        <p class="text-lg font-medium head-p tracking-tighter">
+          자주하시는 질문과 궁금해 하시는 질문들을 정리했습니다.
+        </p>
       </div>
       <ul class="flex justify-between category-list space-x-4">
-        <li class="p-2 rounded">
-          <button class="focus:outline-none">All</button>
+        <li class="">
+          <button
+            class="p-2 focus:outline-none focus:bg-gray-600 focus:text-white rounded"
+          >
+            All
+          </button>
         </li>
-        <li class="p-2 rounded">
-          <button class="focus:outline-none">Category1</button>
+        <li class="">
+          <button
+            class="p-2 focus:outline-none focus:bg-gray-600 focus:text-white rounded"
+          >
+            Category1
+          </button>
         </li>
-        <li class="p-2 rounded">
-          <button class="focus:outline-none">Category2</button>
+        <li class="">
+          <button
+            class="p-2 focus:outline-none focus:bg-gray-600 focus:text-white rounded"
+          >
+            Category2
+          </button>
         </li>
-        <li class="p-2 rounded">
-          <button class="focus:outline-none">Category3</button>
-        </li>
-      </ul>
-
-      <ul class="flex flex-col qa-list px-20 mt-8">
-        <li>
-          <p>Question</p>
-          <button>+</button>
-        </li>
-        <li>
-          <p>Question</p>
-          <button>+</button>
-        </li>
-        <li>
-          <p>Question</p>
-          <button>+</button>
-        </li>
-        <li>
-          <p>Question</p>
-          <button>+</button>
-        </li>
-        <li>
-          <p>Question</p>
-          <button>+</button>
-        </li>
-        <li>
-          <p>Question</p>
-          <button>+</button>
+        <li class="">
+          <button
+            class="p-2 focus:outline-none focus:bg-gray-600 focus:text-white rounded"
+          >
+            Category3
+          </button>
         </li>
       </ul>
 
-      <ul class="flex flex-row justify-between space-x-2 page-list mt-4">
+      <ul class="flex flex-col qa-list mt-8">
+        <li class="shadow bg-gray-50">
+          <p>Question</p>
+          <button>+</button>
+        </li>
+        <li class="shadow bg-gray-50">
+          <p>Question</p>
+          <button>+</button>
+        </li>
+        <li class="shadow bg-gray-50">
+          <p>Question</p>
+          <button>+</button>
+        </li>
+        <li class="shadow bg-gray-50">
+          <p>Question</p>
+          <button>+</button>
+        </li>
+        <li class="shadow bg-gray-50">
+          <p>Question</p>
+          <button>+</button>
+        </li>
+        <li class="shadow bg-gray-50">
+          <p>Question</p>
+          <button>+</button>
+        </li>
+      </ul>
+
+      <ul class="flex flex-row justify-between page-list mt-4">
         <li>1</li>
         <li>2</li>
         <li>3</li>
@@ -223,82 +261,114 @@
     <!-- FIFTH PAGE -->
 
     <!-- SIXTH PAGE -->
-    <section
-      class="flex flex-col items-center justify-center text-center bg-gray-700"
-    >
-      <div class="bg-white rounded-lg my-16">
-        <div class="py-8 px-12">
-          <div class="space-y-2">
-            <p class="text-gray-500 font-light">Conctact Us</p>
-            <h1 class="font-bold text-2xl">Send us a message</h1>
-            <p>궁금하신 점이나 문의사항이 있으시면 문의해주세요.</p>
+    <div class="bg-gray-600">
+      <section
+        class="flex items-center justify-center text-center lg:container lg:mx-auto"
+      >
+        <div class="w-1/3"><img src="./assets/bg/Pattern.png" alt="" /></div>
+        <div class="w-1/3">
+          <div class="bg-white rounded-lg my-16 shadow-lg">
+            <div class="py-8 px-12">
+              <div>
+                <p class="text-gray-400 font-light">Conctact Us</p>
+                <h1
+                  class="message-head font-bold text-3xl leading-tight tracking-tight mb-3"
+                >
+                  Send us a message
+                </h1>
+                <p
+                  class="whitespace-nowrap text-base font-medium head-p tracking-tighter"
+                >
+                  궁금하신 점이나 문의사항이 있으시면 문의해주세요.
+                </p>
+              </div>
+
+              <form action="POST">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    class="rounded h-7 border border-gray-200 px-2"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    class="rounded h-7 border border-gray-200 px-2"
+                    type="text"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+                <div>
+                  <label for="number">Phone Number</label>
+                  <input
+                    class="rounded h-7 border border-gray-200 px-2"
+                    type="text"
+                    name="number"
+                    id="number"
+                  />
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea
+                    class="rounded h-28 border border-gray-200 whitespace-pre-line px-2 py-1"
+                    name="message"
+                    id="message"
+                  ></textarea>
+                </div>
+
+                <button class="text-sm py-2 px-5 rounded">Send</button>
+              </form>
+            </div>
           </div>
-
-          <form action="POST">
-            <div>
-              <label for="name">Name</label>
-              <input
-                class="rounded h-7 border border-gray-200"
-                type="text"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div>
-              <label for="email">Email Address</label>
-              <input
-                class="rounded h-7 border border-gray-200"
-                type="text"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div>
-              <label for="number">Phone Number</label>
-              <input
-                class="rounded h-7 border border-gray-200"
-                type="text"
-                name="number"
-                id="number"
-              />
-            </div>
-            <div>
-              <label for="message">Message</label>
-              <input
-                class="rounded h-28 border border-gray-200"
-                type="text"
-                name="message"
-                id="message"
-              />
-            </div>
-
-            <button class="text-sm py-2 px-5 rounded">Send</button>
-          </form>
         </div>
-      </div>
-    </section>
+        <div class="w-1/3">
+          <img class="float-right" src="./assets/bg/Patternbg_rt.png" alt="" />
+        </div>
+      </section>
+    </div>
     <!-- SIXTH PAGE -->
 
     <!-- SEVENTH PAGE -->
-    <section
-      class="flex flex-col items-center justify-center text-center py-16 brochure"
-    >
-      <div class="mb-8">
-        <p class="text-white">Company Profile</p>
-        <h1 class="text-2xl mt-0 text-white">Company Introduction</h1>
-        <p class="pt-4 text-white">더 자세한 정보는 문서를 참고해주세요.</p>
-      </div>
-      <button class="text-xs py-2 px-5 rounded text-yellow-500 bg-white">
-        Download document
-      </button>
-    </section>
+    <div class="brochure">
+      <section
+        class="flex flex-col items-center justify-center text-center py-16 lg:container lg:mx-auto"
+      >
+        <div class="mb-8">
+          <p class="text-white">Company Profile</p>
+          <h1
+            class="font-bold text-3xl leading-tight tracking-tight mb-3 text-white"
+          >
+            Company Introduction
+          </h1>
+          <p class="whitespace-nowrap font-light tracking-tighter text-white">
+            더 자세한 정보는 문서를 참고해주세요.
+          </p>
+        </div>
+        <button
+          class="text-yellow-500 border border-gray-300 py-2 px-5 rounded bg-white my-4 focus:outline-none focus:border-gray-400 text-base font-normal"
+        >
+          <i class="fas fa-download pr-2"></i>Download Document
+        </button>
+      </section>
+    </div>
     <!-- SEVENTH PAGE -->
 
     <!-- FOOTER -->
-    <footer class="py-16 px-8 flex">
-      <div class="w-1/3">
+    <footer class="py-16 px-8 flex lg:container lg:mx-auto justify-between">
+      <div class="w-1/3 space-y-4">
         <img src="./assets/logos/footer-logo.png" alt="" />
-        <p>Make radually better things</p>
+        <p>Make radically better things</p>
+        <div class="social-logos space-x-6 text-2xl">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+          <i class="fas fa-basketball-ball"></i>
+        </div>
       </div>
       <div>
         <table class="w-full">
